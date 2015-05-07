@@ -1,1 +1,19 @@
 /* CSS declarations go here */
+
+.parakeet-container {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 400px;
+	max-width: 400px;
+	height: auto;
+}
+
+.parakeet-container img {
+	width: 100%;
+	max-width: 100%;
+}
+
+.parakeet-container .contentinfo {
+	color: #aaa;
+}

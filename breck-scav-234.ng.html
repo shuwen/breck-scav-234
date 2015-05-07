@@ -1,0 +1,17 @@
+<div ng-controller="ScavListCtrl">
+	<table>
+		<tr>
+			<th>Item Number</th>
+			<th>Completed</th>
+		</tr>
+		<tr ng-repeat="item in scavList">
+			<td>{{item.number}}</td>
+			<td><input type="checkbox" ng-click="complete(item.complete)" ng-model="item.complete"></td>
+		</tr>
+	</table>
+
+	<div class="parakeet-container">
+		<img src="{{keetURL}}" alt="Parakeet">
+		<span class="contentinfo">Images from WikiMedia Commons and copyright their respective owners.</span>
+	</div>
+</div>

@@ -1,0 +1,13 @@
+{
+  "name": "breck-scav-234",
+  "main": "breck-scav-234.js",
+  "version": "0.0.0",
+  "homepage": "https://github.com/shuwen/breck-scav-234",
+  "authors": [
+    "Shuwen Qian <shuwenq@gmail.com>"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "angular-youtube-mb": "~1.0.2"
+  }
+}

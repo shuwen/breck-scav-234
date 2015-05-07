@@ -42,15 +42,18 @@ if (Meteor.isClient) {
 if (Meteor.isServer) {
   Meteor.startup(function () {
 
-    // Populate the list with 323 items (the number of Scav items this year) if empty
-    if( scavList.find().fetch().length == 0 ) {
-      for(var i=0; i<323; i++) {
+    // Populate the list with 323 items (the number of Scav items this year)
+    for(var i=0; i<323; i++) {
+
+      if ( scavList.find( {'number':i+1} ).fetch().length == 0 ) {
         scavList.insert({
           'number': i+1,
           'complete': false,
         });
       }
+
     }
+
 
   });
 }

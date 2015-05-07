@@ -1,7 +1,7 @@
 scavList = new Mongo.Collection('scavList');
 
 if (Meteor.isClient) {
-  angular.module('breck-scav-234',['angular-meteor'])
+  angular.module('breck-scav-234',['angular-meteor','youtube-embed'])
     .controller('ScavListCtrl', function($scope, $meteor, $window) {
 
       $scope.playlist = [
@@ -46,7 +46,7 @@ if (Meteor.isServer) {
     if( scavList.find().fetch().length == 0 ) {
       for(var i=0; i<323; i++) {
         scavList.insert({
-          '_id': i+1,
+          'number': i+1,
           'complete': false,
         });
       }

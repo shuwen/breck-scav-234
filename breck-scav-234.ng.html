@@ -5,7 +5,7 @@
 			<th>Completed</th>
 		</tr>
 		<tr ng-repeat="item in scavList">
-			<td>{{item._id}}</td>
+			<td>{{item.number}}</td>
 			<td><input type="checkbox" ng-click="complete(item.complete)" ng-model="item.complete"></td>
 		</tr>
 	</table>
